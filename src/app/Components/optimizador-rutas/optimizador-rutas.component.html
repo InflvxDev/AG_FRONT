@@ -1,0 +1,25 @@
+<div class="contenedor">
+    <div class="Params_entrada">
+        <label>Parametros de Entrada</label>
+        <form [formGroup]="ParamEnt">
+            <h4>N° Barrios</h4>
+            <input type="number" class="form-control" formControlName="n_city">
+            <h4>Tamaño de la Poblacion</h4>
+            <input type="number" class="form-control" formControlName="pop_size">
+            <h4>Tamaño Elite</h4>
+            <input type="number" class="form-control" formControlName="elite_size">
+            <h4>Ratio de Mutacion</h4>
+            <input type="number" class="form-control" formControlName="mutation_rate">
+            <h4>N° de Generaciones</h4>
+            <input type="number" class="form-control" formControlName="n_generations">
+            <button type="button" (click)="InicializarAlgoritmo()" [disabled]="ParamEnt.invalid" class="btn btn-primary">Iniciar Algoritmo</button>
+        </form>
+    </div>
+    <div class="Grafica">
+        <label>Grafica</label>
+    </div>
+    <div class="Mapa">
+        <label>Mapa</label>
+
+    </div>
+</div>

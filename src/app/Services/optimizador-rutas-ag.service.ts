@@ -11,4 +11,8 @@ export class OptimizadorRutasAGService {
   postinit(InitTsp: InitTsp){
     return this.http.post(this.baseurl+'/',InitTsp)
   }
+
+  metodoPrueba() {
+    return 0;
+  }
 }

@@ -1,5 +1,5 @@
 export class InitTsp {
-    n_city: number;
+    list_district: any[];
     pop_size: number;
     elite_size: number;
     mutation_rate: number;

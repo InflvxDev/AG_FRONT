@@ -2,8 +2,11 @@
     <div class="Params_entrada">
         <label>Parametros de Entrada</label>
         <form [formGroup]="ParamEnt">
-            <h4>N° Barrios</h4>
-            <input type="number" class="form-control" formControlName="n_city">
+            <h4>Ubicacion de los barrios</h4>
+            <button  type="button" class="btn btn-primary"  (click)="fileInput.click()">
+               Cargar Datos
+            </button>
+            <input type="file"  id="fileDistrict" hidden #fileInput (change)="onChange($event)" />
             <h4>Tamaño de la Poblacion</h4>
             <input type="number" class="form-control" formControlName="pop_size">
             <h4>Tamaño Elite</h4>
